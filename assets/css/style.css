@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /* Might change font later */
+    font-family: sans-serif;
+}
+
+:root {
+    --maincolor: rgb(0, 0, 0);
+    --secondarycolor: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--maincolor);
+}
+
+.icon {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 0px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    padding: 10px 25px;
+    font-weight: bolder;
+    /* using REM for font-size instead of px so that is scales with responsive design which I will add later */
+    font-size: 2rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--secondarycolor);
+    transition: all 0.3s ease-in-out;
+    padding: 5px 5px;
+}
+
+/* Adding hover pseudo-class to navigation bar */
+.nav ul li a:hover {
+    background-color: var(--secondarycolor);
+    color: var(--maincolor);
+    box-shadow: 0 0 10px var(--secondarycolor);
+    border-radius: 10px;
+}
