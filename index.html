@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Setting metadata encoding to UTF-8 and width of viewport to deivce width -->
+        <!-- Setting metadata encoding to UTF-8 and width of viewport to device width -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio - Charles Go</title>
+        <!-- MAKE SURE TO ADD RESET STYLESHEET -->
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
@@ -18,22 +19,48 @@
                 <!-- Creating clickable links for scroll function later -->
                 <ul>
                     <li> <a href="#home">Home</a></li>
-                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#face-phold">About</a></li>
                     <li> <a href="#work">Work</a></li>
                     <li> <a href="#contact">Contact</a></li>
                     <li> <a href="#resume">Resume</a></li>
                 </ul>
             </nav>
         </header>
-
-        <section class="mainpage">
-            <div class="textnbutton">
-                <h1 class="mainpageheader">Professional Portfolio <br>Charles Go</h1>
-                <button class="button">
-                    <a href="#about">ABOUT ME</a>
-                </button>
-            </div>
+        
+        <!-- Main Page Home -->
+        <main>
+            <section class="mainpage">
+                <div class="textnbutton">
+                    <h1 class="mainpageheader">Professional Portfolio <br>Charles Go</h1>
+                    <button class="button">
+                        <a href="#face-phold">ABOUT ME</a>
+                    </button>
+                </div>
+            </section>
             
-        </section>
+            <!-- About Section -->
+            <section class="about">
+                <h1 class="body-headers">About Me</h1>
+                <div id="face-phold">
+                    <img src="./assets/images/ph500.png" alt="placeholder image with 500x500px dimensions">
+                    <div id="about-intro">
+                        <p>
+                            Hello! My name is Charles Go, I am 21 years old currently studying full-stack web development online through a bootcamp course by Adelaide University.
+                            At the end of the 6-month boot-camp, I expect to be able to fully understand both front-end and back-end development and become employer ready.
+                        </p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
