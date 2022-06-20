@@ -151,5 +151,39 @@ html {
     color: var(--secondarycolor);
 }
 
+/* My Work Section */
+.portfolio-large {
+    background-color: var(--maincolor);
+    color: var(--secondarycolor);
+}
+
+.portfolio-small {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    background: var(--maincolor);
+}
+
+.portfolio-main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.portfolio-img {
+    transition: transform 800ms cubic-bezier(0.5, 0, 0.5, 1),
+    opacity 250ms linear;
+}
+        
+.portfolio-img:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+.my-work {
+    background-color: black;
+}
 
 
