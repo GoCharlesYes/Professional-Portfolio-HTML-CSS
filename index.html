@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio - Charles Go</title>
+        <!-- Adding support for icons in 'contact me' section -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <!-- MAKE SURE TO ADD RESET STYLESHEET -->
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
@@ -22,7 +24,6 @@
                     <li> <a href="#about-me">About</a></li>
                     <li> <a href="#work">Work</a></li>
                     <li> <a href="#contact">Contact</a></li>
-                    <li> <a href="#resume">Resume</a></li>
                 </ul>
             </nav>
         </header>
@@ -47,11 +48,6 @@
                         <p>
                             Hello! My name is Charles Go, I am 21 years old currently studying full-stack web development online through a bootcamp course by Adelaide University.
                             At the end of the 6-month boot-camp, I expect to be able to fully understand both front-end and back-end development and become employer ready.
-                        </p>
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <br>
                         <p>
@@ -98,8 +94,76 @@
                         <img src="./assets/images/250x250.png" alt="placeholder image with 250x250px dimensions" class="portfolio-img">
                     </a>
                 </div>
+            </section>
 
+            <!-- Contact Me Section -->
+            <section class="contact" id="contact">
+                <div class="contact-content">
+                    <h1>Contact Me</h1>
+                    <p>
+                        Contact details are located below, or send me a message!
+                    </p>
+                </div>
+                
+                <div class="contact-contain">
+                    <div class="contact-info">
+                        <!-- Email Container -->
+                        <div class="container-box">
+                            <div class="container-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="container-text">
+                                <h2>Email:</h2>
+                                <p>
+                                    gocharles2001@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Phone Container -->
+                        <div class="container-box">
+                            <div class="container-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="container-text">
+                                <h2>Phone:</h2>
+                                <p>
+                                    0436481517
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Address Container -->
+                        <div class="container-box">
+                            <div class="container-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="container-text">
+                                <h2>Address:</h2>
+                                <p>
+                                    123 Sesame Street
+                                </p>
+                            </div>
+                        </div>
 
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form>
+                            <h2>Send a Message</h2>
+                            <div class="typebox">
+                                <span>Name:</span>
+                                <input type="text" name="" required="required">
+                            </div>
+
+                            <div class="typebox">
+                                <span>Email:</span>
+                                <input type="text" name="" required="required">
+                            </div>
+
+                            <div class="typebox">
+                                <span>Enter Message:</span>
+                                <textarea required="required"></textarea>
+                            </div>
+
+                            <div class="typebox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
     </body>

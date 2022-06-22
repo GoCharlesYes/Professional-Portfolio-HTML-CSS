@@ -70,7 +70,7 @@ html {
     font-size: 200%;
 }
 
-/* Adding beckground banner */
+/* Adding background banner */
 .mainpage::before {
     content: "";
     position: absolute;
@@ -186,4 +186,146 @@ html {
     background-color: black;
 }
 
+/* Contact Me Section  */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/sc1.jpg);
+    background-size: cover;
+}
 
+.contact .contact-content {
+    max-width: 800px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+}
+
+.contact .contact-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondarycolor);
+}
+
+.contact .contact-content p {
+    font-size: 25px;
+    color: var(--secondarycolor);
+}
+
+.contact-contain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-contain .contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-contain .contact-info .container-box {
+    position: relative;
+    padding: 25px;
+    display: flex;
+}
+
+.contact-contain .contact-info .container-box .container-icon {
+    min-width: 65px;
+    height: 65px;
+    background: var(--secondarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.contact-contain .contact-info .container-box .container-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    font-size: 20px;
+    color: var(--secondarycolor);
+}
+
+.contact-form {
+    width: 40%;
+    padding: 35px;
+    background: var(--secondarycolor);
+}
+
+.contact-form h2 {
+    font-size: 40px;
+}
+
+.contact-form .typebox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .typebox input, textarea {
+    width: 100%;
+    padding: 5px 0px;
+    margin: 10px 0px;
+    font-size: 15px;
+    border: none; 
+    border-bottom: 1px solid black; 
+    outline: none;
+    resize: none;
+}
+
+/* Send Button */
+.contact-form .typebox input[type="submit"] {
+    width: 90px;
+    background: rgb(37, 158, 238);
+    color: var(--secondarycolor);
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    /* Portfolio */
+    .portfolio-small {
+        flex-direction: column;
+        position: relative;
+        left: 300px;
+    }
+
+    .portfolio-item {
+        width: 50%;
+    }
+
+    /* About Me Responsive */
+     #face-phold img {
+        width: 30%;
+        height: auto;
+    }
+
+    #about-intro {
+        flex-direction: column;
+    }
+
+    /* Contact Responsive */
+    .contact {
+        padding: 50px;
+    }
+
+    .contact-contain {
+        flex-direction: column;
+    }
+
+    .contact-contain .contact-info {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+   
+}
