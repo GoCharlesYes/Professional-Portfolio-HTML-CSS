@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    /* Might change font later */
     font-family: sans-serif;
 }
 
@@ -11,11 +10,12 @@ html {
     background-color: var(--maincolor);
 }
 
-/* Change colours to fit theme */
+/* Setting variables for colours */
 :root {
     --maincolor: rgb(0, 0, 0, 0.7);
     --secondarycolor: white;
 }
+
 
 .icon {
     display: flex;
@@ -25,6 +25,7 @@ html {
     left: 0px;
 }
 
+/* Styling navbar */
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -40,7 +41,6 @@ html {
 .nav ul li {
     padding: 10px 25px;
     font-weight: bolder;
-    /* using REM for font-size instead of px so that is scales with responsive design which I will add later */
     font-size: 2rem;
 }
 
@@ -291,8 +291,9 @@ html {
     cursor: pointer;
 }
 
+/* Adding Responsive Design */
 @media (max-width: 990px) {
-    /* Portfolio */
+    /* Portfolio Responsive */
     .portfolio-small {
         flex-direction: column;
         position: relative;
@@ -326,6 +327,4 @@ html {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-
-   
 }
